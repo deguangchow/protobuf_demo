@@ -1,0 +1,70 @@
+syntax = "proto2";
+
+package core;
+
+enum prop_type {
+	PropType_Null        = 0;
+	PropType_Integer     = 1;
+	PropType_Uinteger    = 2;
+	PropType_Number      = 3;
+	PropType_String      = 4;
+	PropType_WString     = 5;
+	PropType_Vartable    = 6;
+	PropType_Vector      = 7;
+	PropType_Item        = 8;
+	PropType_WeakItem    = 9;
+	PropType_Uint64      = 10;
+}
+
+enum relation_type {
+	child       = 0;
+	secondary   = 1;
+    inherit     = 2;
+	feetable    = 3;
+	vartable    = 4;
+}
+
+message WString {
+    optional string         _val    = 1;
+}
+message Vartable {
+    message vartable_pair {
+        required string     _key    = 1;
+        required prop_value _val    = 2; 
+    }
+    repeated vartable_pair  _val    = 1;
+}
+message Vector {
+    repeated prop_value     _val    = 1;
+}
+message WeakItem {
+    optional Item           _val    = 1;
+}
+
+message prop_value {
+    required prop_type      _type   = 1;
+
+	optional int32          i_val   = 2;
+	optional uint32         u_val   = 3;
+	optional uint64         u64_val = 4;
+	optional double         d_val   = 5;
+	optional string         s_val   = 6;
+	optional WString        ws_val  = 7;
+	optional Vartable       vt_val  = 8;
+	optional Vector         vv_val  = 9;
+	optional Item           it_val  = 10;
+	optional WeakItem       wit_val = 11;
+}
+
+message relation {
+	required relation_type  _type       = 1;
+    repeated Item           _relatives  = 2;
+}
+
+message Item {
+	repeated prop_value     _props      = 1; 
+	repeated relation       _relations  = 2;
+}
+
+
+

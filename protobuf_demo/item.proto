@@ -1,31 +1,33 @@
 syntax = "proto2";
 
-package tutorial;
+package core;
 
-message Property {
-	optional string name = 1;
-	optional int32 code = 2;
-	optional string unit = 3;
+enum relation_type {
+	child       = 0;
+	secondary   = 1;
+    inherit     = 2;
+	feetable    = 3;
+	vartable    = 4;
+}
+
+message property {
+	optional bytes name = 1;
+	optional string code = 2;
+	optional bytes unit = 3;
 	optional double amount = 4;
 	optional double price = 5;
 	optional double summary = 6;
 	required int32 catagory = 7;
 }
 
-message Releation {
-	enum ReleationType {
-		CHILD  = 0;
-		SECONDARY = 1;
-		FEETABLE = 2;
-		VARIANT = 3;
-	}
-	required ReleationType = 1[default = CHILD];
-	repeated Item item = 2;
+message relation {
+	required relation_type  _type       = 1;
+    repeated Item           _relatives  = 2;
 }
 
 message Item {
-	required Property property = 1; 
-	repeated Releation releations = 2;
+	required property       _props      = 1; 
+	repeated relation       _relations  = 2;
 }
 
 

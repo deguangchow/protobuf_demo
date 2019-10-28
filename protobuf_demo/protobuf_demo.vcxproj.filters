@@ -36,6 +36,15 @@
     <ClInclude Include="addressbook_write.h">
       <Filter>addressbook</Filter>
     </ClInclude>
+    <ClInclude Include="item.pb.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item_read.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="item_write.h">
+      <Filter>item</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -46,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="addressbook.pb.cc">
       <Filter>addressbook</Filter>
+    </ClCompile>
+    <ClCompile Include="item.pb.cc">
+      <Filter>item</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

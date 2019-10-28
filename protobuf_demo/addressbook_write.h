@@ -57,10 +57,10 @@ void PromptForAddress(tutorial::Person* person) {
     }
 }
 
-// test_write_message function:  Reads the entire address book from a file,
+// test_write_addressbook function:  Reads the entire address book from a file,
 //   adds one person based on user input, then writes it back out to the same
 //   file.
-int test_write_message(int argc, char* argv[]) {
+int test_addressbook_write(int argc, char* argv[]) {
     // Verify that the version of the library that we linked against is
     // compatible with the version of the headers we compiled against.
     GOOGLE_PROTOBUF_VERIFY_VERSION;

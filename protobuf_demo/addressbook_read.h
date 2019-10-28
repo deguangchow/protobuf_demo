@@ -43,9 +43,9 @@ void ListPeople(const tutorial::AddressBook& address_book) {
     }
 }
 
-// test_read_message function:  Reads the entire address book from a file and prints all
+// test_read_addressbook function:  Reads the entire address book from a file and prints all
 //   the information inside.
-int test_read_message(int argc, char* argv[]) {
+int test_addressbook_read(int argc, char* argv[]) {
     // Verify that the version of the library that we linked against is
     // compatible with the version of the headers we compiled against.
     GOOGLE_PROTOBUF_VERIFY_VERSION;
