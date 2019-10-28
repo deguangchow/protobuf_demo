@@ -1,8 +1,15 @@
-// stdafx.cpp : Ö»°üÀ¨±ê×¼°üº¬ÎÄ¼şµÄÔ´ÎÄ¼ş
-// protobuf - demo.pch ½«×÷ÎªÔ¤±àÒëÍ·
-// stdafx.obj ½«°üº¬Ô¤±àÒëÀàĞÍĞÅÏ¢
+///    Copyright (C) 2019 DG.C, DGCHOW, deguangchow
+///        deguangchow@qq.com
+///
+///    \brief    stdafx.cpp
+///
+///    \author   deguangchow
+///    \version  1.0
+///    \2019/10/28
+
+
+// stdafx.cpp : åªåŒ…æ‹¬æ ‡å‡†åŒ…å«æ–‡ä»¶çš„æºæ–‡ä»¶
+// protobuf_demo.pch å°†ä½œä¸ºé¢„ç¼–è¯‘å¤´
+// stdafx.obj å°†åŒ…å«é¢„ç¼–è¯‘ç±»å‹ä¿¡æ¯
 
 #include "stdafx.h"
-
-// TODO: ÔÚ STDAFX.H ÖĞÒıÓÃÈÎºÎËùĞèµÄ¸½¼ÓÍ·ÎÄ¼ş£¬
-//¶ø²»ÊÇÔÚ´ËÎÄ¼şÖĞÒıÓÃ

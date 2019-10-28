@@ -1,17 +1,23 @@
-// protobuf - demo.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
-//
+///    Copyright (C) 2019 DG.C, DGCHOW, deguangchow
+///        deguangchow@qq.com
+///
+///    \brief    protobuf_demo : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
+///
+///    \author   deguangchow
+///    \version  1.0
+///    \2019/10/28
 
 #include "stdafx.h"
 #include "addressbook_read.h"
 #include "addressbook_write.h"
 
 int main(int argc, char* argv[]) {
-
 #if 0
-	test_write_message(argc, argv);
+    test_write_message(argc, argv);
 #endif
 
-	test_read_message(argc, argv);
+    test_read_message(argc, argv);
 
-	return 0;
+    return 0;
 }
+

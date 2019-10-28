@@ -30,3 +30,28 @@
 *.exe
 *.out
 *.app
+
+
+# MSVC
+*.txt
+*.tlog
+*.obj
+*.log
+*.idb
+*.pdb
+.vs/
+*.db
+*.opendb
+*.exe
+*.ilk
+*.ipch
+*.pch
+*.iobj
+*.ipdb
+*.lib
+Release/
+Debug/
+
+#created by Protoc with .proto file
+.pb.cc
+.pb.h

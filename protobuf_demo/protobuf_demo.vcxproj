@@ -148,7 +148,6 @@
     <ClInclude Include="addressbook.pb.h" />
     <ClInclude Include="addressbook_read.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
     <ClInclude Include="addressbook_write.h" />
   </ItemGroup>
   <ItemGroup>
